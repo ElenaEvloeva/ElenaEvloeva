@@ -16,10 +16,6 @@
 	font-style: bold;
 }
 
-html {
-	font-size: 10px;
-}
-
 body {
    margin: 0;
    font-family: "Open Sans";
@@ -62,50 +58,46 @@ body {
 }
 
 .logo {
-	width: 13.4rem;
+	width: 134px;
+	margin: auto;
+	margin-top: 32px; 
 	fill: #ffffff;
 }
 
-@media (min-width: 641px) {
-	.logo {
-	   width: 20.5rem;
-   }
-}
-
-@media (min-width: 961px) {
-	.logo {
-	   width: 19.3rem;
-   }
-}
-
 .welcome {
-	margin-top: 13.3rem;
+	margin-top: 135px;
+	margin-left: 20px;
 }
 
 .welcome_title {
-	margin-block-start: 0rem;
-   margin-block-end: 0rem;
+	margin-block-start: 0;
+   margin-block-end: 0;
+   margin-bottom:-17px;
    
    display: flex;
 	flex-wrap: wrap;
-   font-size: 2.8rem;
+   font-size: 28px;
    font-weight: bold;
-   margin-left: 2rem;
  
    text-transform: uppercase;
+   letter-spacing: 1px;
 }
 
 .welcome_title:last-child {
-   margin-left: 6.5rem;
+   margin-left: 45px;
+   margin-top: 31px;
 }
 
 .socials_articles {
-	margin-top: 8.8rem;
+	margin: 88px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 }
 
 .socials_items {
-	width: 26rem;
-	height: 3.6rem;
+	width: 260px;
+	height: 34px;
 	margin: auto;
 
 	display: flex;
@@ -113,28 +105,104 @@ body {
 	box-sizing: border-box;
 
 	border: 1px solid #5e42b0;
-	border-radius: 5rem;
+	border-radius: 50px;
 	background-color: #5e42b0;
 }
 
 .socials_items:last-child {
-	margin-top: 1.3rem;
+	margin-top: 13px;
+}
+
+
+@media (min-width: 641px) {
+   .header {
+   	background-image: url(../image/football_1280.jpg);
+   }
+
+	.logo {
+	   width: 205px;
+	   margin-top: 38px; 
+   }
+
+   .welcome {
+		margin-top: 180px;
+		margin-left: 90px;
+   }
+
+   .welcome_title {
+   	font-size: 64px;
+   	letter-spacing: 3px;
+   }
+
+   .welcome_title:last-child {
+   	margin-left: 100px;
+   }
+
+   .socials_articles {
+   	width: 650px;
+   	margin-top: 310px;
+   }
+
+   .socials_items {
+		width: 310px;
+		height: 75px;	
+	}
+
+	.socials_items:last-child {
+		margin-top: 0px;
+		margin-left: 30px; 
+	}
+}
+
+
+@media (min-width: 961px) {
+	.logo {
+	   width: 193px;
+	   margin-top: 45px; 
+   }
+   .header {
+   	background-image: url(../image/football_1920.jpg);
+   }
+
+   .welcome {
+		margin-top: 290px;
+		margin-left: 190px;
+   }
+
+   .welcome_title {
+   	font-size: 90px;
+		letter-spacing: 5px;
+		margin-bottom:-67px;
+   }
+
+   .welcome_title:last-child {
+   	margin-left: 450px;
+   }
+
+    .socials_articles {
+   	width: 680px;
+   	margin-top: 310px;
+   }
+
+	.socials_items:last-child {
+		margin-left: 50px; 
+	}
 }
 
 .icon{
-	margin-left: 8.5rem;
-	margin-top: 0.5rem;
-	width: 2.3rem;
-	height: 2.3rem;
+	margin-left: 85px;
+	margin-top: 5px;
+	width: 23px;
+	height: 23px;
 	fill: #ffffff;
 }
 
 .socials-item {
 	display: flex;
 	flex-wrap: wrap;
-	width: 8.2rem;
-	height: 2.6rem;
-	margin-left: 1rem;
+	width: 82px;
+	height: 26px;
+	margin-left: 10px;
 	font-size: 8px;
    letter-spacing: 0px;
    color: #ffffff;
@@ -144,7 +212,7 @@ body {
 }
 
 .socials-item-link:first-child {
-	margin-top: 0.5rem;
+	margin-top: 5px;
 	font-weight: normal;
 }
 
@@ -193,19 +261,19 @@ body {
 }
 
 .footer_container_logo {
-	width: 7.2rem;
-	height: 7.4rem;
-	margin: 9.8rem auto 0;
+	width: 72px;
+	height: 74px;
+	margin: 98px auto 0;
 
 	border: 1px solid #5e42b0;
-	border-radius: 0.8rem;
+	border-radius: 8px;
 	background-color: #5e42b0;
 	display: flex;
 }
 
 .footer_logo {
-	width: 5.6rem;
-	height: 4.8rem;
+	width: 56px;
+	height: 48px;
 	margin: auto;
 	fill: #ffffff;
 	justify-content: center;
@@ -213,12 +281,12 @@ body {
 }
 
 .footer_titles {
-	margin: 5.6rem auto 0;
-   font-size: 1.4rem;
+	margin: 56px auto 0;
+   font-size: 14px;
 }
 
 .footer_title {
-	width: 28rem;
+	width: 280px;
 	text-align: center;	
 	font-weight: normal;
 	text-transform: uppercase;
@@ -226,16 +294,16 @@ body {
 }
 
 .footer_title:first-child {
-	font-size: 3.2rem;
+	font-size: 32px;
    font-weight: bold;color: #ffffff;
 }
 
 .header_socials_articles {
-	margin-top: 7rem;
+	margin-top: 70px;
 }
 
 .logo:last-child {
-	margin-top: 7.2rem;
+	margin-top: 72px;
 }
 
 
