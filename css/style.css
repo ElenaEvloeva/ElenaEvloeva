@@ -13,7 +13,6 @@
 	     url(../fonts/OpenSans-Bold.woff2) format('woff2'),
 	     url(../fonts/OpenSans-Bold.ttf) format('ttf');
 	font-weight: 700;
-	font-style: bold;
 }
 
 body {
@@ -23,13 +22,12 @@ body {
 
 .header {
    width: 100%;
-	height: 100vh;  
+	min-height: 100vh;
     
 	background-image: url(../image/football_767.jpg);
 	background-repeat: no-repeat;
 	background-position: center 0;
    background-size: cover;
-   background-repeat: no-repeat;
 	background-color: #444444;
 
 	display: flex;
@@ -107,12 +105,121 @@ body {
 	border: 1px solid #5e42b0;
 	border-radius: 50px;
 	background-color: #5e42b0;
+	
+	align-items: center;
 }
 
 .socials_items:last-child {
 	margin-top: 13px;
 }
 
+.icon{
+	margin-left: 85px;
+	width: 25px;
+	height: 25px;
+	fill: #ffffff;
+}
+
+.socials-item {
+	display:block;
+	width:auto;
+   height:auto;
+	margin-left: 10px;
+	font-size: 8px;
+   color: #ffffff;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-style: normal;
+}
+
+.socials-item-link:first-child {
+	font-weight: normal;
+}
+
+
+.footer {
+   width: 100%;
+	min-height: 100vh;  
+    
+	background-image: url(../image/game_767.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+   background-size: cover;
+	background-color: #444444;
+
+	display: flex;
+   position: relative;
+   justify-content: center;
+}
+
+.footer::after {	
+   content: "";
+   width: 100%;
+   min-height: 100vh;
+   box-sizing: border-box;
+   position: absolute;
+   background-color: #0a0e34;
+   opacity: 0.9;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0; 
+}
+
+.footer_container {
+   position: relative;
+   z-index: 1;
+   color: #ffffff;
+}
+
+.footer_container_logo {
+	width: 75px;
+	height: 75px;
+	margin: 98px auto 0;
+
+	border: 1px solid #5e42b0;
+	border-radius: 8px;
+	background-color: #5e42b0;
+	display: flex;
+}
+
+.footer_logo {
+	width: 56px;
+	height: 48px;
+	margin: auto;
+	fill: #ffffff;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_titles {
+	margin: 56px auto 0;
+	font-size: 14px;
+}
+
+.footer_title {
+	width: 280px;
+	text-align: center;	
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #a496ca;
+}
+
+.footer_title:first-child {
+	font-size: 32px;
+   font-weight: bold;color: #ffffff;
+}
+
+.footer_socials_articles {
+	margin: 70px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.logo:last-child {
+	margin-top: 72px;
+}
 
 @media (min-width: 641px) {
    .header {
@@ -145,13 +252,73 @@ body {
 
    .socials_items {
 		width: 310px;
-		height: 75px;	
+		height: 80px;
+		align-items: center;	
+		justify-content: center;
 	}
 
 	.socials_items:last-child {
 		margin-top: 0px;
 		margin-left: 30px; 
 	}
+
+	.icon{
+		margin-top:0;
+      margin-left:0;
+		width: 50px;
+		height: 50px;
+		line-height: 80px;
+	}
+
+	.socials-item {
+		display:block;
+		width:auto;
+      height:auto;
+		margin-left: 26px;
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	.footer_container_logo {
+		width: 130px;
+		height: 136px;
+		margin: 125px auto 0;
+		border-radius: 30px;
+   }
+
+   .footer_logo {
+		width: 102px;
+		height: 86px;
+	}
+
+	.footer_titles {
+		margin: 82px auto 0;
+		font-size: 36px;
+	}
+
+	.footer_title {
+		width: 710px;
+   }
+
+   .footer_title:first-child {
+		font-size: 80px;
+	   letter-spacing: 4px; 
+	}
+
+	.header_socials_articles {
+	 margin-top: 290px;
+   }
+
+   .footer_socials_articles {
+   	width: 650px;
+		margin-top: 290px;
+	}
+
+	.logo:last-child {
+		margin-top: 55px;
+	}
+
+
 }
 
 
@@ -160,18 +327,19 @@ body {
 	   width: 193px;
 	   margin-top: 45px; 
    }
+
    .header {
    	background-image: url(../image/football_1920.jpg);
    }
 
    .welcome {
 		margin-top: 290px;
-		margin-left: 190px;
+		margin-left: 0;
    }
 
    .welcome_title {
    	font-size: 90px;
-		letter-spacing: 5px;
+		letter-spacing: 4px;
 		margin-bottom:-67px;
    }
 
@@ -179,131 +347,17 @@ body {
    	margin-left: 450px;
    }
 
-    .socials_articles {
+   .socials_articles {
    	width: 680px;
-   	margin-top: 310px;
+   	margin-top: 220px;
    }
 
 	.socials_items:last-child {
 		margin-left: 50px; 
 	}
+
+   .socials-item-link:first-child {
+   	margin-top:0px;
+   }
+
 }
-
-.icon{
-	margin-left: 85px;
-	margin-top: 5px;
-	width: 23px;
-	height: 23px;
-	fill: #ffffff;
-}
-
-.socials-item {
-	display: flex;
-	flex-wrap: wrap;
-	width: 82px;
-	height: 26px;
-	margin-left: 10px;
-	font-size: 8px;
-   letter-spacing: 0px;
-   color: #ffffff;
-   font-weight: bold;
-   text-transform: uppercase;
-   font-style: normal;
-}
-
-.socials-item-link:first-child {
-	margin-top: 5px;
-	font-weight: normal;
-}
-
-
-
-
-
-
-
-
-
-.footer {
-   width: 100%;
-	height: 100vh;  
-    
-	background-image: url(../image/game_767.jpg);
-	background-repeat: no-repeat;
-	background-position: center 0;
-   background-size: cover;
-   background-repeat: no-repeat;
-	background-color: #444444;
-
-	display: flex;
-   position: relative;
-   justify-content: center;
-}
-
-.footer::after {	
-   content: "";
-   width: 100%;
-   min-height: 100vh;
-   box-sizing: border-box;
-   position: absolute;
-   background-color: #0a0e34;
-   opacity: 0.9;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0; 
-}
-
-.footer_container {
-   position: relative;
-   z-index: 1;
-   color: #ffffff;
-}
-
-.footer_container_logo {
-	width: 72px;
-	height: 74px;
-	margin: 98px auto 0;
-
-	border: 1px solid #5e42b0;
-	border-radius: 8px;
-	background-color: #5e42b0;
-	display: flex;
-}
-
-.footer_logo {
-	width: 56px;
-	height: 48px;
-	margin: auto;
-	fill: #ffffff;
-	justify-content: center;
-	align-items: center;
-}
-
-.footer_titles {
-	margin: 56px auto 0;
-   font-size: 14px;
-}
-
-.footer_title {
-	width: 280px;
-	text-align: center;	
-	font-weight: normal;
-	text-transform: uppercase;
-	color: #9b8ec1;
-}
-
-.footer_title:first-child {
-	font-size: 32px;
-   font-weight: bold;color: #ffffff;
-}
-
-.header_socials_articles {
-	margin-top: 70px;
-}
-
-.logo:last-child {
-	margin-top: 72px;
-}
-
-
