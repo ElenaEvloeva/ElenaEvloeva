@@ -407,13 +407,14 @@ a {
 	width: 100%;	
 }
 
-.sections_container {
+.sections_container{
 	margin:0 auto;
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	position: relative;
 }
+
 
 .section_title {
 	margin-block-start: 0;
@@ -453,7 +454,8 @@ a {
 
 
 .container_title {
-	margin-left: 20px;
+	width: 87.5%;
+	margin: 0 auto;
 	padding-top: 60px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -505,3 +507,16 @@ a {
 	line-height: 18px;
 	color: #000000;
 }
+
+.box {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.box_number {
+	width: 70px;
+	height: 70px;
+	background-color: #5e42b0;
+}
+
