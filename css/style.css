@@ -272,6 +272,7 @@ img {
 
 .image_box {
 	position: relative;
+	background-color: #c1c1c1;
 }
 
 .image_box_number {
@@ -620,26 +621,75 @@ img {
 	.logo {
 	   width: 193px;
 	   margin-top: 45px; 
-	   }
+	}
 
    .header {
    	background-image: url(../image/football_1920.jpg);
-     }
+   }
 
    .welcome {
 		margin-top: 290px;
 		margin-left: 0;
-     }
+   }
 
    .welcome_title {
    	font-size: 90px;
 		letter-spacing: 4px;
 		margin-bottom:-67px;
-     }
+   }
 
    .welcome_title:last-child {
    	margin-left: 450px;
-     }
+   }
+
+   .activity {
+		display: flex;
+		flex-wrap: nowrap;
+   }
+
+	.activity:nth-child(2n) {
+     flex-direction: row-reverse;
+   }
+
+	img {
+   	width: 50vw;
+   	height: 38vw;
+   }
+
+   .image_box_number {
+	   width: 8.75vw;
+	   height: 8.56vw;
+	   bottom: 0;
+	   top: 30%;
+	   left: 45vw;
+	} 
+
+   .image_number {
+		font-size: 24px;
+	}
+
+	.image_number::after {
+		width: 24px;
+		height: 5px;
+		border-radius: 2px;
+	}
+
+	.article-content {
+   	padding-top: 12.5vw;
+   	padding-bottom: 0;
+	}
+
+	.article-title {
+		padding-right: 4vw;
+		padding-left: 6.77vw;
+	   padding-bottom: 5.5vw;
+	   font-size: 4.17vw;
+	}
+
+	.article-description {
+		padding-right: 4vw;
+		padding-left: 6.77vw;
+	}
 
    .footer_wrapper{
    	width: 870px;
@@ -647,23 +697,23 @@ img {
 		display: flex;
 		flex-wrap: nowrap;
 		box-sizing: border-box;
-	  }
+	}
 
 	.footer_container_logo {
 		width: 130px;
 		height: 135px;
 		margin: 0;
-     }
+   }
 
    .footer_titles {
 		width: 730px;
 		margin: 0 0 0 30px;
 		font-size: 30px;
-	  }
+	}
 
    .footer_title {
    	text-align: left;
-     }
+   }
 
    .footer_title:first-child {
    	margin-top: 15px; 
@@ -671,16 +721,16 @@ img {
 		font-size: 80px;
 		letter-spacing: 4px;
 		line-height: 60px;
-	  }
+	}
 
 	.footer_socials_articles {
 		margin-top: 150px;
-	  }
+	}
 
 	.logo:last-child {
 		margin-top: 260px;
 		margin-bottom: 50px;
-     }
+   }
 }
 
 
