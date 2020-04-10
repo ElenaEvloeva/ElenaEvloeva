@@ -32,6 +32,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+   	max-width: 100%
+   }
+
 .header {
    width: 100%;
 	min-height: 100vh;
@@ -168,13 +172,11 @@ section {
 }
 
 .athlets .section_image {
-	width: 200px;
    position: absolute;
    left: 60px;
 }
 
 .players .section_image {
-	width: 280px;
    position: absolute;
    left: 20px;
 }
@@ -184,7 +186,7 @@ section {
 	margin-block-start: 0;
    margin-block-end: 0;
 	list-style-type: none;
-	padding-top: 250px; 
+	padding-top: 220px; 
 }
 
 .container_item_link {
@@ -249,10 +251,6 @@ section {
 	font-size: 15px;
 	letter-spacing: 1px;
 	line-height: 18px;
-}
-
-img {
-	width: 100%;
 }
 
 .image_box {
@@ -444,19 +442,17 @@ img {
 	}
 
 	.athlets .section_image {
-		width: 450px;
-    	left: -170px;
+		left: -200px;
     	top: 20px;
-	}
+   } 	
 
 	.players .section_image {
-		width: 400px;
-    	top: -20px;
-    	left: 50vw;
+		left: 55%;
+    	top: -20px; 
 	}
 
    .container_item_link {
-   	min-height: 0;
+   	min-height: 200px;
    }
 
 	.container_item {
@@ -618,6 +614,11 @@ img {
 		font-size: 80px;
 	}
 
+	.container_item_link {
+   	min-height: 250px;
+   }
+
+
 	.container_title {
 		padding-left: 55vw;
 		padding-top: 80px;
@@ -635,9 +636,9 @@ img {
 		width: 36vw;
 		padding-top: 30px;
 		padding-left: 55vw;
-		font-size: 1.3vw;
+		font-size: 1.25vw;
+		line-height: 1.4vw;
 		letter-spacing: 1px;
-		line-height: 30px;
 	}
 
    .activity {
@@ -692,8 +693,8 @@ img {
 		padding-right: 9vw;
 		padding-left: 6.77vw;
 		font-size: 1.25vw;
+		line-height: 1.4vw;
 		letter-spacing: 1px;
-		line-height: 1.3vw;
 	}
 
    .footer_wrapper{
