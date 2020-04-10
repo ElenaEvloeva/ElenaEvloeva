@@ -32,8 +32,8 @@ a {
 	text-decoration: none;
 }
 
-img {
-   	max-width: 100%
+.activity img {
+   max-width: 100%
    }
 
 .header {
@@ -403,10 +403,17 @@ section {
 
 
 @media (min-width: 641px) {
-	img {
+	.athlets img, .players img {
    	width: auto;
    	height: 100%;
    }
+
+   .players .section_image {
+		right: 0;
+		left: auto;
+		overflow-x: hidden;
+		top: -40px;
+	}
 
    .header {
    	background-image: url(../image/football_1280.jpg);
@@ -454,11 +461,6 @@ section {
 		left: -200px;
     	top: 20px;
    } 	
-
-	.players .section_image {
-		left: 55%;
-    	top: -20px; 
-	}
 
 	.container_item {
 		padding-top: 0px;
@@ -543,6 +545,7 @@ section {
    	width: 650px;
 		margin-top: 290px;
 	}
+
       
 	.footer_container_logo {
 		width: 130px;
@@ -589,6 +592,7 @@ section {
 }
 
 @media (min-width: 961px) {
+
 	.logo {
 	   width: 193px;
 	   margin-top: 45px; 
@@ -613,10 +617,40 @@ section {
    	margin-left: 450px;
    }
 
+   .socials_articles {
+		width: 750px;
+	}
+
+	.socials_items {
+		margin-right: 12px;
+	}
+
+	.socials_items:last-child {
+		margin-right: 12px;
+	}
+
    .section_title {
 		margin-top: 80px;
 		margin-left: 55vw;
 		font-size: 80px;
+	}
+		
+	/*
+	отменила правило для 641
+	картинка в absolute ориентируется справа 
+	% для изменения положения при расширении экрана
+	*/
+	.athlets .section_image {
+    	left: 0px;
+		width: 50%;
+		text-align: right;
+	}
+
+	.players .section_image {
+		right: 0;
+		overflow-x: hidden;
+		width: 50%;
+		text-align: left;
 	}
 
 	.container_title {
@@ -644,15 +678,14 @@ section {
    .activity {
 		display: flex;
 		flex-wrap: nowrap;
+		overflow-x: hidden;
    }
 
 	.activity:nth-child(2n) {
      flex-direction: row-reverse;
    }
 
-   .athlets .section_image {
-    left: -70px;
-	}
+   
 
    .image_box_number {
 	   width: 8.75vw;
@@ -729,6 +762,7 @@ section {
 	}
 
 	.footer_socials_articles {
+		width: 750px;
 		margin-top: 150px;
 	}
 
