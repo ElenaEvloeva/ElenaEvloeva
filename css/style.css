@@ -32,9 +32,15 @@ a {
 	text-decoration: none;
 }
 
+
+.activity picture {
+	display: flex;
+} /*убирает отступ по умолчанию для picture*/
+
 .activity img {
-   max-width: 100%
-   }
+   max-width: 100%;
+   width: 100%;
+}
 
 .header {
    width: 100%;
@@ -292,13 +298,13 @@ section {
 	opacity: 30%;
 }
 
-.article-content {
-   padding-top: 35px;
-   padding-bottom: 75px;
+.article_content {
+	min-height: 200px;
 }
 
 .article-title {
 	margin: 0;
+	padding-top: 35px;
 	padding-right: 20px;
 	padding-left: 7vw;
    padding-bottom: 25px;
@@ -313,6 +319,7 @@ section {
 	margin: 0;
 	padding-right: 20px;
 	padding-left: 7vw;
+	padding-bottom: 35px;
 	font-size: 16px;
 	letter-spacing: 1px;
 	line-height: 20px;
@@ -521,12 +528,12 @@ section {
 		margin-top: 0;
 	}
 
-	.article-content {
-   	padding-top: 95px;
-   	padding-bottom: 95px;
+	.article_content {
+		min-height: 340px;
 	}
 
 	.article-title {
+		padding-top: 12vw;
 		padding-right: 4.5vw;
 		padding-left: 4.5vw;
 	   padding-bottom: 35px;
@@ -537,6 +544,7 @@ section {
 	.article-description {
 		padding-right: 4.5vw;
 		padding-left: 4.5vw;
+		padding-bottom: 3vh;
 		font-size: 24px;
 		line-height: 28px;
 	}
@@ -591,8 +599,41 @@ section {
 	}
 }
 
-@media (min-width: 961px) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+@media (min-width: 961px) {
 	.logo {
 	   width: 193px;
 	   margin-top: 45px; 
@@ -685,20 +726,23 @@ section {
      flex-direction: row-reverse;
    }
 
-   
+
+   .image_box, .article_content {
+   	width: 50%;
+   }
 
    .image_box_number {
 	   width: 8.75vw;
 	   height: 8.56vw;
 	   bottom: 0;
 	   top: 30%;
-	   left: 45vw;
+	   left: calc(100vw/2 - 8.75vw/2);
 	} 
 
 	.activity:nth-child(2n) .image_box_number {
-		left: -60px;
+		left: calc(-8.75vw/2);
 	}
-
+	
    .image_number {
 		font-size: 24px;
 	}
@@ -709,12 +753,12 @@ section {
 		border-radius: 2px;
 	}
 
-	.article-content {
-   	padding-top: 13vw;
-   	padding-bottom: 0;
+	.article_content {
+		min-height: 20vw;
 	}
 
 	.article-title {
+		padding-top: 12vw;
 		padding-right: 9vw;
 		padding-left: 6.77vw;
 	   padding-bottom: 5.5vw;
@@ -724,10 +768,13 @@ section {
 	.article-description {
 		padding-right: 9vw;
 		padding-left: 6.77vw;
+		padding-bottom: 3vh;
 		font-size: 1.25vw;
 		line-height: 1.4vw;
 		letter-spacing: 1px;
 	}
+
+	/*проверено*/
 
    .footer_wrapper{
    	width: 870px;
